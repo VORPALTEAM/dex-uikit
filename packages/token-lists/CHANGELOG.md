@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.28.0](https://peiko-git.space/Hromov/pickleswap-toolkit/compare/@pancakeswap/token-lists@2.27.0...@pancakeswap/token-lists@2.28.0) (2022-02-16)
+
+
+### Features
+
+* List ACH ([#404](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/404)) ([0ccd617](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/0ccd6177dfe286dde0a30c8350c189eba1c31af7))
+* **token-list:** update the btt token info ([#402](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/402)) ([20c962d](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/20c962d26b7234f276832923168a329f2a059648))
+* **token-list:** Update the BTT Token info. ([#401](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/401)) ([8e9d42a](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/8e9d42a6013a1960d05399b186bf38f8792a5df5))
+* Add ERTHA ([#396](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/396)) ([9bd8496](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/9bd84966009fb69b29075ac80d67fc4bc7906a78))
+* Add PRL ([#390](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/390)) ([572c545](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/572c545958a30ed0ecab1d561dd2286e92b058ee))
+* List FROYO ([#387](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/387)) ([f540feb](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/f540febbf4ce792ad817793cd75757ab66f0eb1a))
+* List FUSE ([#394](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/394)) ([d21bc8f](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/d21bc8f271ea90981cb6ad5ccf3e4bfcc533e614))
+* List GEAR ([#400](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/400)) ([4dbe2e1](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/4dbe2e111f23ee9b6723eea413e3064a77cfa345))
+* Remove ITAM & CCAR ([#397](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/397)) ([762269f](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/762269f3e776e81144fa50de1187b9a61a8bd779))
+* Remove Safemoon ([#388](https://peiko-git.space/Hromov/pickleswap-toolkit/issues/388)) ([27398ff](https://peiko-git.space/Hromov/pickleswap-toolkit/commits/27398ff6c9bd7af15107bd78626321b6e0d096d0))
+
+
+
+
+
 # [2.27.0](https://github.com/pancakeswap/pancake-toolkit/compare/@pancakeswap/token-lists@2.26.0...@pancakeswap/token-lists@2.27.0) (2022-01-16)
 
 
