@@ -1,14 +1,14 @@
 {
-  "name": "@pancakeswap/uikit",
+  "name": "pickleswap-uikit",
   "version": "0.64.0",
-  "description": "Set of UI components for pancake projects",
+  "description": "Set of UI components for pickleswap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-uikit",
+  "repository": "https://peiko-git.space/Hromov/pickleswap-toolkit/-/tree/master/packages/pancake-uikit",
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
@@ -51,5 +51,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "2069346e81285621fcc0f3e2dde7e6d3b88ee3d1"
 }

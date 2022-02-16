@@ -1,11 +1,11 @@
 {
-  "name": "@pancakeswap/profile-sdk",
+  "name": "pickleswap-profile-sdk",
   "version": "0.3.1",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
-  "repository": "https://github.com/pancakeswap/pancake-toolkit/tree/master/packages/pancake-profile-sdk",
+  "repository": "https://peiko-git.space/Hromov/pickleswap-toolkit/-/tree/master/packages/pancake-profile-sdk",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "start": "yarn build && node ./dist",
@@ -39,5 +39,6 @@
   "dependencies": {
     "@types/js-cookie": "^2.2.6",
     "js-cookie": "^2.2.1"
-  }
+  },
+  "gitHead": "2069346e81285621fcc0f3e2dde7e6d3b88ee3d1"
 }
