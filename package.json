@@ -1,20 +1,16 @@
 {
-  "name": "pancake-toolkit",
-  "version": "1.0.0",
-  "description": "Pancake frontend packages",
+  "name": "pickleswap-toolkit",
+  "version": "0.0.1",
+  "description": "Pickle frontend packages",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pancakeswap/pancake-toolkit.git"
+    "url": "git+https://peiko-git.space/Hromov/pickleswap-toolkit.git"
   },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pancakeswap/pancake-toolkit/issues"
-  },
-  "homepage": "https://github.com/pancakeswap/pancake-toolkit#readme",
+  "license": "MIT",
   "scripts": {
     "build": "lerna run build",
     "test": "lerna run test",

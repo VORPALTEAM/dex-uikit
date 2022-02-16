@@ -59,6 +59,7 @@ const getState = () => {
 };
 
 const useMatchBreakpoints = (): BreakpointChecks => {
+  console.log('test');
   const [state, setState] = useState<State>(() => getState());
 
   useIsomorphicEffect(() => {
