@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.1](https://peiko-git.space/Hromov/pickleswap-toolkit/-/tree/master/packages/pancake-profile-sdk/compare/pickleswap-profile-sdk@0.4.0...pickleswap-profile-sdk@0.4.1) (2022-02-17)
+
+**Note:** Version bump only for package pickleswap-profile-sdk
+
+
+
+
+
 # 0.4.0 (2022-02-16)
 
 

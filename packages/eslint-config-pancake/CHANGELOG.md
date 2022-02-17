@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://peiko-git.space/Hromov/pickleswap-toolkit/-/tree/master/packages/eslint-config-pancake/compare/@pancakeswap/eslint-config-pancake@1.2.1...@pancakeswap/eslint-config-pancake@1.2.2) (2022-02-17)
+
+**Note:** Version bump only for package @pancakeswap/eslint-config-pancake
+
+
+
+
+
 ## [1.2.1](https://peiko-git.space/Hromov/pickleswap-toolkit/-/tree/master/packages/eslint-config-pancake/compare/@pancakeswap/eslint-config-pancake@1.2.0...@pancakeswap/eslint-config-pancake@1.2.1) (2022-02-16)
 
 **Note:** Version bump only for package @pancakeswap/eslint-config-pancake
