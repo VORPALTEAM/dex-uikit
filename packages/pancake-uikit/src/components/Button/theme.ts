@@ -21,6 +21,10 @@ export const styleVariants = {
     backgroundColor: "primary",
     color: "white",
   },
+  [variants.SUBPRIMARY]: {
+    backgroundColor: "#352F44",
+    color: "#F1F6F9",
+  },
   [variants.SECONDARY]: {
     backgroundColor: "transparent",
     border: "2px solid",
