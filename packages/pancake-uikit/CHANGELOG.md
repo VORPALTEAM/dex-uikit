@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.65.5](https://peiko-git.space/Hromov/pickleswap-toolkit/-/tree/master/packages/pancake-uikit/compare/pickleswap-uikit@0.65.3...pickleswap-uikit@0.65.5) (2022-02-18)
+
+**Note:** Version bump only for package pickleswap-uikit
+
+
+
+
+
 ## [0.65.3](https://peiko-git.space/Hromov/pickleswap-toolkit/-/tree/master/packages/pancake-uikit/compare/pickleswap-uikit@0.65.2...pickleswap-uikit@0.65.3) (2022-02-17)
 
 **Note:** Version bump only for package pickleswap-uikit
