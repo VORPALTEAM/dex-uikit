@@ -23,7 +23,7 @@ export const StyledListItem = styled.li`
 
   &:first-child {
     color: ${darkColors.secondary};
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
   }
 `;

@@ -27,7 +27,7 @@ export const StyledUserMenu = styled(Flex)`
 export const LabelText = styled.div`
   color: ${({ theme }) => theme.colors.text};
   display: none;
-  font-weight: 600;
+  font-weight: 500;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     display: block;
