@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, Box } from "../Box";
-import { SwapVertIcon } from "../Svg";
+import { CustomSwapVertIcon } from "../Svg";
 import Text from "../Text/Text";
 import { StyledBalanceInput, StyledInput, UnitContainer, SwitchUnitsButton } from "./styles";
 import { BalanceInputProps } from "./types";
@@ -42,7 +42,7 @@ const BalanceInput: React.FC<BalanceInputProps> = ({
             {unit && <UnitContainer>{unit}</UnitContainer>}
           </Flex>
           {currencyValue && (
-            <Text fontSize="12px" textAlign="right" color="textSubtle">
+            <Text fontSize="18px" textAlign="right" style={{opacity: 0.5}} color="contrast">
               {currencyValue}
             </Text>
           )}
@@ -50,7 +50,7 @@ const BalanceInput: React.FC<BalanceInputProps> = ({
         {switchEditingUnits && (
           <Flex alignItems="center" pl="12px">
             <SwitchUnitsButton scale="sm" variant="text" onClick={switchEditingUnits}>
-              <SwapVertIcon color="textSubtle" />
+              <CustomSwapVertIcon />
             </SwitchUnitsButton>
           </Flex>
         )}

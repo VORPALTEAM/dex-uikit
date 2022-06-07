@@ -17,8 +17,9 @@ const getFontSize = ({ fontSize, small }: TextProps) => {
 
 const Text = styled.div<TextProps>`
   color: ${getColor};
+  font-family: ${({fontFamily}) => fontFamily || "Roboto"};
   font-size: ${getFontSize};
-  font-weight: ${({ bold }) => (bold ? 600 : 400)};
+  font-weight: ${({ bold }) => (bold ? 700 : 400)};
   line-height: 1.5;
   ${({ textTransform }) => textTransform && `text-transform: ${textTransform};`}
   ${({ ellipsis }) =>

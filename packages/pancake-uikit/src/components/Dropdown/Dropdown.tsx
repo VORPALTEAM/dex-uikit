@@ -24,13 +24,15 @@ const DropdownContent = styled.div<{ position: Position }>`
   transform: translate(-50%, 0);
   left: ${getLeft};
   bottom: ${getBottom};
-  background-color: ${({ theme }) => theme.nav.background};
+  /* background-color: ${({ theme }) => theme.nav.background}; */
+  background-color: ${({ theme }) => theme.colors.tertiary};
   box-shadow: ${({ theme }) => theme.shadows.level1};
   padding: 16px;
   max-height: 400px;
   overflow-y: auto;
   z-index: ${({ theme }) => theme.zIndices.dropdown};
-  border-radius: ${({ theme }) => theme.radii.small};
+  /* border-radius: ${({ theme }) => theme.radii.small}; */
+  border-radius: 16px;
 `;
 
 const Container = styled.div`

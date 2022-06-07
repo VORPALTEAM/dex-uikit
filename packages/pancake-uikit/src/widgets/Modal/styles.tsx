@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Flex from "../../components/Box/Flex";
 import { Box } from "../../components/Box";
-import { ArrowBackIcon, CloseIcon } from "../../components/Svg";
+import { ArrowBackIcon, CloseIcon, ArrowBackBlackIcon } from "../../components/Svg";
 import { IconButton } from "../../components/Button";
 import { ModalProps } from "./types";
 
@@ -10,13 +10,24 @@ export const ModalHeader = styled.div<{ background?: string }>`
   align-items: center;
   background: ${({ background }) => background || "transparent"};
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  display: flex;
   padding: 12px 24px;
+  display: flex;
+  flex-direction: column-reverse;
+  width: 90%;
+  margin: auto;
 `;
 
 export const ModalTitle = styled(Flex)`
   align-items: center;
   flex: 1;
+  width: 100%;
+  justify-content: center;
+`;
+
+export const StyledIconButton = styled(IconButton)`
+  width: 100%;
+  justify-content: flex-end;
+  height: 20px;
 `;
 
 export const ModalBody = styled(Flex)`
@@ -27,16 +38,16 @@ export const ModalBody = styled(Flex)`
 
 export const ModalCloseButton: React.FC<{ onDismiss: ModalProps["onDismiss"] }> = ({ onDismiss }) => {
   return (
-    <IconButton variant="text" onClick={onDismiss} aria-label="Close the dialog">
+    <StyledIconButton variant="text" onClick={onDismiss} aria-label="Close the dialog">
       <CloseIcon color="primary" />
-    </IconButton>
+    </StyledIconButton>
   );
 };
 
 export const ModalBackButton: React.FC<{ onBack: ModalProps["onBack"] }> = ({ onBack }) => {
   return (
     <IconButton variant="text" onClick={onBack} area-label="go back" mr="8px">
-      <ArrowBackIcon color="primary" />
+      <ArrowBackBlackIcon width="12px" />
     </IconButton>
   );
 };

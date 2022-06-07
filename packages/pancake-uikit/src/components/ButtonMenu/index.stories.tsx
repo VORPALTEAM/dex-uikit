@@ -5,6 +5,7 @@ import { Meta } from "@storybook/react/types-6-0";
 import Box from "../Box/Box";
 import ButtonMenu from "./ButtonMenu";
 import ButtonMenuItem from "./ButtonMenuItem";
+import CustomButtonMenuItem from "./CustomButtonMenuItem";
 
 const Row = styled.div`
   margin-bottom: 32px;
@@ -150,6 +151,17 @@ export const FullWidthMenu: React.FC = () => {
         <ButtonMenuItem as="a" href="https://pancakeswap.finance">
           Link 3
         </ButtonMenuItem>
+      </ButtonMenu>
+      <ButtonMenu activeIndex={index} fullWidth scale="sm" variant="subtle">
+        <CustomButtonMenuItem>
+          Link 1
+        </CustomButtonMenuItem>
+        <CustomButtonMenuItem>
+          Link 2
+        </CustomButtonMenuItem>
+        <CustomButtonMenuItem>
+          Link 3
+        </CustomButtonMenuItem>
       </ButtonMenu>
     </Box>
   );

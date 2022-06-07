@@ -58,7 +58,8 @@ const Input = styled.input<InputProps>`
   }
 
   &:focus:not(:disabled) {
-    box-shadow: ${({ theme }) => theme.shadows.focus};
+    box-shadow: ${({ theme }) => theme.shadows.CustomFocus};
+    /* border: ${({ theme }) => `3px solid ${theme.colors.primary}`}; */
   }
 `;
 

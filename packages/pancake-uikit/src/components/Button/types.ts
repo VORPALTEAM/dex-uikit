@@ -10,7 +10,7 @@ export const scales = {
 
 export const variants = {
   PRIMARY: "primary",
-  SUBPRIMARY: 'subPrimary',
+  SUBPRIMARY: "subPrimary",
   SECONDARY: "secondary",
   TERTIARY: "tertiary",
   TEXT: "text",
@@ -18,6 +18,7 @@ export const variants = {
   SUBTLE: "subtle",
   SUCCESS: "success",
   LIGHT: "light",
+  FARMSBUTTON: "farmsButton"
 } as const;
 
 export type Scale = typeof scales[keyof typeof scales];

@@ -14,6 +14,7 @@ export type CardTheme = {
   boxShadowActive: string;
   boxShadowSuccess: string;
   boxShadowWarning: string;
+  farmsButtonShadow: string;
   cardHeaderBackground: {
     default: string;
     blue: string;
@@ -31,4 +32,5 @@ export interface CardProps extends SpaceProps, HTMLAttributes<HTMLDivElement> {
   ribbon?: React.ReactNode;
   borderBackground?: string;
   background?: string;
+  width?: number;
 }

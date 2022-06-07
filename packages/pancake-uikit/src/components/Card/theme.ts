@@ -8,6 +8,7 @@ export const light: CardTheme = {
   boxShadowActive: shadows.active,
   boxShadowSuccess: shadows.success,
   boxShadowWarning: shadows.warning,
+  farmsButtonShadow: shadows.farmsButtonShadow,
   cardHeaderBackground: {
     default: lightColors.gradients.cardHeader,
     blue: lightColors.gradients.blue,
@@ -20,6 +21,7 @@ export const light: CardTheme = {
 export const dark: CardTheme = {
   background: darkColors.backgroundAlt,
   boxShadow: shadows.level1,
+  farmsButtonShadow: shadows.farmsButtonShadow,
   boxShadowActive: shadows.active,
   boxShadowSuccess: shadows.success,
   boxShadowWarning: shadows.warning,

@@ -6,7 +6,7 @@ import { ToggleProps, scales } from "./types";
 const Toggle: React.FC<ToggleProps> = ({
   checked,
   defaultColor = "input",
-  checkedColor = "success",
+  checkedColor = "backgroundAlt",
   scale = scales.LG,
   startIcon,
   endIcon,
@@ -19,7 +19,7 @@ const Toggle: React.FC<ToggleProps> = ({
       <Input checked={checked} scale={scale} {...props} type="checkbox" />
       {startIcon && endIcon ? (
         <>
-          <Handle scale={scale}>
+          <Handle $isChecked={isChecked} scale={scale}>
             <Flex height="100%" alignItems="center" justifyContent="center">
               {checked ? endIcon(checked) : startIcon(!checked)}
             </Flex>
@@ -30,7 +30,7 @@ const Toggle: React.FC<ToggleProps> = ({
           </Flex>
         </>
       ) : (
-        <Handle scale={scale} />
+        <Handle $isChecked={isChecked} scale={scale} />
       )}
     </StyledToggle>
   );

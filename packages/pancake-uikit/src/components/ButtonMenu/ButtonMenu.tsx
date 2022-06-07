@@ -26,6 +26,7 @@ const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
   & > button,
   & > a {
     flex: ${({ fullWidth }) => (fullWidth ? 1 : "auto")};
+    border-radius: 15px;
   }
 
   & > button + button,

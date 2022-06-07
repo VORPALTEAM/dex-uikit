@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import { BoxProps } from "../Box";
 import { DropdownMenuItems } from "../DropdownMenu/types";
 
@@ -14,4 +15,5 @@ export interface MenuItemsProps extends BoxProps {
   items: MenuItemsType[];
   activeItem?: string;
   activeSubItem?: string;
+  globalMenu?: ReactElement;
 }

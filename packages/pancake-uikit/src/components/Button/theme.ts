@@ -18,8 +18,8 @@ export const scaleVariants = {
 
 export const styleVariants = {
   [variants.PRIMARY]: {
-    backgroundColor: "primary",
-    color: "white",
+    backgroundColor: "backgroundAlt1",
+    color: "primary",
   },
   [variants.SUBPRIMARY]: {
     backgroundColor: "#352F44",
@@ -34,6 +34,11 @@ export const styleVariants = {
     ":disabled": {
       backgroundColor: "transparent",
     },
+  },
+  [variants.FARMSBUTTON]: {
+    backgroundColor: "backgroundAlt1",
+    color: "contrast",
+    boxShadow: "farmsButtonShadow",
   },
   [variants.TERTIARY]: {
     backgroundColor: "tertiary",

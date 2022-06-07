@@ -42,11 +42,11 @@ export default {
 export const Default: React.FC = () => {
   return (
     <div>
-      <Text>Default</Text>
+      <Text color="contrast" fontFamily="RoundsBlack">NAOS-BNB</Text>
       <Text bold>Bold text</Text>
       <Text small>Small text</Text>
       <Text fontSize="24px">Custom fontsize</Text>
-      <Text color="red">Custom color</Text>
+      <Text color="red">Stake LP tokens to earn.</Text>
       <Text color="primary">Custom color from theme</Text>
       <Text color="secondary" textTransform="uppercase">
         with text transform

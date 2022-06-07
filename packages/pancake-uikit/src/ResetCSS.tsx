@@ -1,6 +1,88 @@
 import { createGlobalStyle } from "styled-components";
+// import RoundsBlack from "./fonts/Rounds-Black.ttf";
+// import RobotoBlack from "./fonts/Roboto-Black.ttf";
+// import RobotoBlackItalic from "./fonts/Roboto-BlackItalic.ttf";
+// import RobotoBold from "./fonts/Roboto-Bold.ttf";
+// import RobotoItalic from "./fonts/Roboto-Italic.ttf";
+// import RobotoLight from "./fonts/Roboto-Light.ttf";
+// import RobotoLightItalic from "./fonts/Roboto-LightItalic.ttf";
+// import RobotoMedium from "./fonts/Roboto-Medium.ttf";
+// import RobotoMediumItalic from "./fonts/Roboto-MediumItalic.ttf";
+// import RobotoRegular from "./fonts/Roboto-Regular.ttf";
+// import RobotoThin from "./fonts/Roboto-Thin.ttf";
+// import RobotoThinItalic from "./fonts/Roboto-ThinItalic.ttf";
 
 const ResetCSS = createGlobalStyle`
+    /* @font-face {
+    font-family: "RobotoBlack";
+    src: url("static/media/src/fonts/Rounds-Black.ttf") format("truetype");
+    }
+
+    @font-face {
+    font-family: "RobotoBold";
+    src: url("static/media/src/fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    }
+
+    @font-face {
+    font-family: "RobotoItalic";
+    src: url("static/media/src/fonts/Roboto-BlackItalic.ttf") format("truetype");
+    font-style: italic;
+    }
+
+    @font-face {
+    font-family: "RobotoBlackItalic";
+    src: url("static/media/src/fonts/Roboto-BlackItalic.ttf") format("truetype");
+    font-style: italic;
+    }
+
+    @font-face {
+    font-family: "Roboto";
+    src: url("static/media/src/fonts/Roboto-Light.ttf") format("truetype");
+    }
+    @font-face {
+    font-family: "RobotoItalic";
+    src: url("static/media/src/fonts/Roboto-Italic.ttf") format("truetype");
+    font-style: italic;
+    }
+    @font-face {
+    font-family: "RobotoLightItalic";
+    src: url("static/media/src/fonts/Roboto-LightItalic.ttf") format("truetype");
+    font-style: italic;
+    }
+    @font-face {
+    font-family: "RobotoMedium";
+    src: url("static/media/src/fonts/Roboto-Medium.ttf") format("truetype");
+    }
+
+    @font-face {
+    font-family: "RobotoMediumItalic";
+    src: url("static/media/src/fonts/Roboto-MediumItalic.ttf") format("truetype");
+    font-style: italic;
+    }
+
+    @font-face {
+    font-family: "RobotoRegular";
+    src: url("static/media/src/fonts/Roboto-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+    font-family: "RobotoThin";
+    src: url("static/media/src/fonts/Roboto-Thin.ttf") format("truetype");
+    }
+
+    @font-face {
+    font-family: "RobotoThinItalic";
+    src: url("static/media/src/fonts/Roboto-ThinItalic.ttf") format("truetype");
+    font-style: italic;
+    }
+
+@font-face {
+    font-family: "RoundsBlack";
+    src: local("RoundsBlack"),
+    url("static/media/src/fonts/Rounds-Black.ttf") format("truetype");
+    font-weight: bold;
+} */
   /* prettier-ignore */
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,9 +146,10 @@ const ResetCSS = createGlobalStyle`
     box-sizing: border-box;
   }
   * {
-    font-family: 'Kanit', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    /* font-family: "Roboto"; */
+  /* font-family: 'RoundsBlack'; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* -moz-osx-font-smoothing: grayscale; */
   }
 
   /* Number */

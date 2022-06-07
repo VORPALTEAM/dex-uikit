@@ -2,12 +2,15 @@ import React, { useEffect, useState } from "react";
 import { usePopper } from "react-popper";
 import styled from "styled-components";
 import { Box, Flex } from "../../../../components/Box";
-import { ChevronDownIcon } from "../../../../components/Svg";
+import { ChevronUpIcon } from "../../../../components/Svg";
 import { UserMenuProps, variants } from "./types";
 import MenuIcon from "./MenuIcon";
 import { UserMenuItem } from "./styles";
 
 export const StyledUserMenu = styled(Flex)`
+  width: 160px;
+  height: 40px;
+  justify-content: space-between;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.tertiary};
   border-radius: 16px;
@@ -15,7 +18,6 @@ export const StyledUserMenu = styled(Flex)`
   cursor: pointer;
   display: inline-flex;
   height: 32px;
-  padding-left: 40px;
   padding-right: 8px;
   position: relative;
 
@@ -25,19 +27,19 @@ export const StyledUserMenu = styled(Flex)`
 `;
 
 export const LabelText = styled.div`
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => theme.colors.contrast};
   display: none;
   font-weight: 500;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     display: block;
-    margin-left: 8px;
+    margin-left: 33px;
     margin-right: 4px;
   }
 `;
 
 const Menu = styled.div<{ isOpen: boolean }>`
-  background-color: ${({ theme }) => theme.card.background};
+  background-color: ${({ theme }) => theme.colors.tertiary};
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 16px;
   padding-bottom: 4px;
@@ -110,9 +112,9 @@ const UserMenu: React.FC<UserMenuProps> = ({
           setIsOpen((s) => !s);
         }}
       >
-        <MenuIcon avatarSrc={avatarSrc} variant={variant} />
+        {/* <MenuIcon avatarSrc={avatarSrc} variant={variant} /> */}
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        <ChevronDownIcon color="text" width="24px" />
+        <ChevronUpIcon style={{ transform: "rotate(180deg)" }} color="contrast" width="13px" />
       </StyledUserMenu>
       <Menu style={styles.popper} ref={setTooltipRef} {...attributes.popper} isOpen={isOpen}>
         <Box onClick={() => setIsOpen(false)}>{children}</Box>

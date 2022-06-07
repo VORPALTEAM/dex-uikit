@@ -1,5 +1,6 @@
 import React from "react";
-import { ChevronDownIcon, ChevronUpIcon } from "../Svg";
+import styled from "styled-components";
+import { ChevronDownIcon, ChevronUpIcon, CustomArrowDown } from "../Svg";
 import Button from "./Button";
 import IconButton from "./IconButton";
 
@@ -7,6 +8,11 @@ interface Props {
   onClick?: () => void;
   expanded?: boolean;
 }
+
+const StyledButton = styled(Button)`
+  flex-direction: column;
+  gap: 2px;
+`
 
 export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children }) => {
   return (
@@ -22,14 +28,14 @@ ExpandableButton.defaultProps = {
 
 export const ExpandableLabel: React.FC<Props> = ({ onClick, expanded, children }) => {
   return (
-    <Button
+    <StyledButton
       variant="text"
       aria-label="Hide or show expandable content"
       onClick={onClick}
-      endIcon={expanded ? <ChevronUpIcon color="primary" /> : <ChevronDownIcon color="primary" />}
+      endIcon={expanded ? <CustomArrowDown width="13px" style={{transform: 'rotateZ(180deg)'}} color="backgroundAlt1" /> : <CustomArrowDown width="13px" color="backgroundAlt1" />}
     >
       {children}
-    </Button>
+    </StyledButton>
   );
 };
 ExpandableLabel.defaultProps = {

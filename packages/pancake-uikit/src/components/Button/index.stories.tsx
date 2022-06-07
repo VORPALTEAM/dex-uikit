@@ -47,6 +47,9 @@ export const Default: React.FC = () => {
         })}
       </Box>
       <Box>
+      <Button mr="8px" variant="farmsButton">
+          Disabled
+        </Button>
         <Button mr="8px" disabled>
           Disabled
         </Button>

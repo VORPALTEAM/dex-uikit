@@ -60,13 +60,33 @@ export const links: MenuItemsType[] = [
     ],
   },
   {
-    label: "Win",
-    href: "/",
+    label: "Soon",
+    href: "/soon",
     icon: "Trophy",
     items: [
       {
-        label: "Win",
+        label: "soon",
         href: "/",
+      },
+      {
+        label: "Predictions",
+        href: "/",
+        status: status.LIVE,
+      },
+      {
+        label: "Lottery",
+        href: "/",
+      },
+    ],
+  },
+  {
+    label: "Sale",
+    href: "/sale",
+    icon: "Trophy",
+    items: [
+      {
+        label: "Sale",
+        href: "/sale",
       },
       {
         label: "Predictions",

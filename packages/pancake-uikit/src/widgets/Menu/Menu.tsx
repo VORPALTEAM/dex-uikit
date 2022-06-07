@@ -26,7 +26,7 @@ const StyledNav = styled.nav`
   align-items: center;
   width: 100%;
   height: ${MENU_HEIGHT}px;
-  background-color: ${({ theme }) => theme.nav.background};
+  background-color: #000;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
   transform: translate3d(0, 0, 0);
 
@@ -131,27 +131,34 @@ const Menu: React.FC<NavProps> = ({
         <FixedContainer showMenu={showMenu} height={totalTopMenuHeight}>
           {banner && <TopBannerContainer height={topBannerHeight}>{banner}</TopBannerContainer>}
           <StyledNav>
-            <Flex>
+            <Flex style={{ gap: "180px" }}>
               <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
-              {!isMobile && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />}
-            </Flex>
-            <Flex alignItems="center" height="100%">
               {!isMobile && (
+                <MenuItems
+                  globalMenu={globalMenu}
+                  items={links}
+                  activeItem={activeItem}
+                  activeSubItem={activeSubItem}
+                  ml="24px"
+                />
+              )}
+            </Flex>
+            <Flex style={{ gap: "30px" }} alignItems="center" height="100%">
+              {/* {!isMobile && (
                 <Box mr="12px">
                   <CakePrice cakePriceUsd={cakePriceUsd} />
                 </Box>
-              )}
-              <Box mt="4px">
+              )} */}
+              <Box>
                 <LangSelector
                   currentLang={currentLang}
                   langs={langs}
                   setLang={setLang}
                   buttonScale="xs"
                   color="textSubtle"
-                  hideLanguage
                 />
               </Box>
-              {globalMenu} {userMenu}
+              {userMenu}
             </Flex>
           </StyledNav>
         </FixedContainer>

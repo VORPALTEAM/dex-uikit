@@ -6,7 +6,7 @@ const scaleKeyValues = {
     handleHeight: "16px",
     handleWidth: "16px",
     handleLeft: "2px",
-    handleTop: "2px",
+    handleTop: "1px",
     checkedLeft: "calc(100% - 18px)",
     toggleHeight: "20px",
     toggleWidth: "36px",
@@ -15,7 +15,7 @@ const scaleKeyValues = {
     handleHeight: "26px",
     handleWidth: "26px",
     handleLeft: "3px",
-    handleTop: "3px",
+    handleTop: "2px",
     checkedLeft: "calc(100% - 30px)",
     toggleHeight: "32px",
     toggleWidth: "56px",
@@ -24,7 +24,7 @@ const scaleKeyValues = {
     handleHeight: "32px",
     handleWidth: "32px",
     handleLeft: "4px",
-    handleTop: "4px",
+    handleTop: "3px",
     checkedLeft: "calc(100% - 36px)",
     toggleHeight: "40px",
     toggleWidth: "72px",
@@ -38,7 +38,7 @@ const getScale =
   };
 
 export const Handle = styled.div<HandleProps>`
-  background-color: ${({ theme }) => theme.toggle.handleBackground};
+  background-color: ${({ theme, $isChecked }) => ($isChecked ? theme.colors.contrast : theme.colors.backgroundAlt1)};
   border-radius: 50%;
   cursor: pointer;
   height: ${getScale("handleHeight")};
@@ -76,6 +76,8 @@ const StyledToggle = styled.div<StyleToggleProps>`
   background-color: ${({ theme, $checked, $checkedColor, $defaultColor }) =>
     theme.colors[$checked ? $checkedColor : $defaultColor]};
   border-radius: 24px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 0px 5px 1px #d3cee0, inset 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
   box-shadow: ${({ theme }) => theme.shadows.inset};
   cursor: pointer;
   display: inline-flex;

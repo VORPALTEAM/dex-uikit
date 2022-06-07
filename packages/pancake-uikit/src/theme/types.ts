@@ -16,6 +16,7 @@ export type Radii = {
   small: string;
   default: string;
   card: string;
+  subCard: string;
   circle: string;
 };
 
@@ -25,8 +26,10 @@ export type Shadows = {
   success: string;
   warning: string;
   focus: string;
+  CustomFocus: string;
   inset: string;
   tooltip: string;
+  farmsButtonShadow: string;
 };
 
 export type Gradients = {
@@ -61,6 +64,7 @@ export type Colors = {
   backgroundAlt1: string;
   backgroundAlt2: string;
   text: string;
+  purple: string;
   textDisabled: string;
   textSubtle: string;
   disabled: string;

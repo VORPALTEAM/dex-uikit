@@ -17,7 +17,7 @@ const SubMenuItems: React.FC<SubMenuItemsProps> = ({ items = [], activeItem, isM
         ({ label, href, iconName, itemProps }) =>
           label && (
             <Box key={label} mr="20px">
-              <MenuItem href={href} isActive={href === activeItem} variant="subMenu" {...itemProps}>
+              {/* <MenuItem href={href} isActive={href === activeItem} variant="subMenu" {...itemProps}>
                 {iconName && (
                   <IconComponent
                     color={href === activeItem ? "secondary" : "textSubtle"}
@@ -26,7 +26,7 @@ const SubMenuItems: React.FC<SubMenuItemsProps> = ({ items = [], activeItem, isM
                   />
                 )}
                 {label}
-              </MenuItem>
+              </MenuItem> */}
             </Box>
           )
       )}
