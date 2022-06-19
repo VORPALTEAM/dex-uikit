@@ -9,7 +9,7 @@ import { ModalProps } from "./types";
 export const ModalHeader = styled.div<{ background?: string }>`
   align-items: center;
   background: ${({ background }) => background || "transparent"};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  border-bottom: 1px solid ${({ theme }) => theme.colors.text};
   padding: 12px 24px;
   display: flex;
   flex-direction: column-reverse;

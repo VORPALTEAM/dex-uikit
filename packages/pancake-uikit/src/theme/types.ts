@@ -63,6 +63,8 @@ export type Colors = {
   backgroundAlt: string;
   backgroundAlt1: string;
   backgroundAlt2: string;
+  yellow: string;
+  turquoise: string;
   text: string;
   purple: string;
   textDisabled: string;

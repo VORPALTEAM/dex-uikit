@@ -3,6 +3,10 @@ const variants = {
     background: "#FFB23719",
     borderColor: "warning",
   },
+  customWarning: {
+    background: "#352F44",
+    borderColor: "yellow",
+  },
   danger: {
     background: "#ED4B9E19",
     borderColor: "failure",

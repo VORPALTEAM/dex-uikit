@@ -11,6 +11,7 @@ const MessageContext = React.createContext<MessageProps>({ variant: "success" })
 
 const Icons = {
   warning: WarningIcon,
+  customWarning: WarningIcon,
   danger: ErrorIcon,
   success: CheckmarkCircleFillIcon,
 };
@@ -19,7 +20,7 @@ const MessageContainer = styled.div<MessageProps>`
   display: flex;
   background-color: gray;
   padding: 16px;
-  border-radius: 16px;
+  border-radius: 6px;
   border: solid 1px;
 
   ${space}
@@ -32,6 +33,7 @@ const colors = {
   // these color names should be place in the theme once the palette is finalized
   warning: "#D67E0A",
   success: "#129E7D",
+  customWarning: "yellow",
   danger: "failure",
 };
 

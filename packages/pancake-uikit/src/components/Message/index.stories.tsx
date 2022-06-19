@@ -11,7 +11,7 @@ export default {
 export const Default: React.FC = () => {
   return (
     <>
-      <Message variant="warning" mb="16px">
+      <Message variant="customWarning" mb="16px">
         <MessageText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
