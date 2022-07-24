@@ -49,7 +49,7 @@ const StyledButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #352f44;
+  background-color: #DBD8E3;
   border-radius: 6px;
   height: 40px;
   width: 100%;
