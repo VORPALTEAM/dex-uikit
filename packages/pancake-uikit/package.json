@@ -1,6 +1,6 @@
 {
   "name": "vorpaltesttoolkit",
-  "version": "0.70.2",
+  "version": "0.70.3",
   "description": "Set of UI components for pickleswap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -12,7 +12,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
-    "build": "tsc -d --emitDeclarationOnly --declarationDir dist",
+    "build": "rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
     "watch": "rollup -c -w",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
