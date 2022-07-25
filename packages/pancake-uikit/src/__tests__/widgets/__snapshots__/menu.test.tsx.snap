@@ -482,7 +482,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c13:hover:not(:disabled) {
-  background-color: #EFF4F5;
+  background-color: #352F44;
 }
 
 .c13:active:not(:disabled) {
@@ -1021,7 +1021,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c9:hover {
-  background: #EFF4F5;
+  background: #352F44;
   border-radius: 16px;
 }
 
@@ -1052,7 +1052,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c14:hover {
-  background: #EFF4F5;
+  background: #352F44;
   border-radius: 16px;
 }
 
@@ -1083,7 +1083,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c17:hover {
-  background: #EFF4F5;
+  background: #352F44;
   border-radius: 16px;
 }
 
@@ -1105,7 +1105,7 @@ exports[`renders correctly 1`] = `
 }
 
 .c43:hover {
-  background: #EFF4F5;
+  background: #352F44;
 }
 
 .c41 {
@@ -2054,7 +2054,7 @@ exports[`renders correctly 1`] = `
               </div>
             </div>
           </div>
-           
+
         </div>
       </nav>
     </div>

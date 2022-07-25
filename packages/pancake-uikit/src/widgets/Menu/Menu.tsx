@@ -27,7 +27,6 @@ const StyledNav = styled.nav`
   width: 100%;
   height: ${MENU_HEIGHT}px;
   background-color: #000;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
   transform: translate3d(0, 0, 0);
 
   padding-left: 16px;
@@ -150,13 +149,13 @@ const Menu: React.FC<NavProps> = ({
                 </Box>
               )} */}
               <Box>
-                <LangSelector
+              {/*  <LangSelector
                   currentLang={currentLang}
                   langs={langs}
                   setLang={setLang}
                   buttonScale="xs"
                   color="textSubtle"
-                />
+                /> */}
               </Box>
               {userMenu}
             </Flex>
@@ -164,19 +163,19 @@ const Menu: React.FC<NavProps> = ({
         </FixedContainer>
         {subLinks && (
           <Flex justifyContent="space-around">
-            <SubMenuItems items={subLinksWithoutMobile} mt={`${totalTopMenuHeight + 1}px`} activeItem={activeSubItem} />
+            <SubMenuItems items={subLinksWithoutMobile} mt={`${totalTopMenuHeight - 1}px`} activeItem={activeSubItem} />
 
             {subLinksMobileOnly?.length > 0 && (
               <SubMenuItems
                 items={subLinksMobileOnly}
-                mt={`${totalTopMenuHeight + 1}px`}
+                mt={`${totalTopMenuHeight - 1}px`}
                 activeItem={activeSubItem}
                 isMobileOnly
               />
             )}
           </Flex>
         )}
-        <BodyWrapper mt={!subLinks ? `${totalTopMenuHeight + 1}px` : "0"}>
+        <BodyWrapper mt={!subLinks ? `${totalTopMenuHeight - 1}px` : "0"}>
           <Inner isPushed={false} showMenu={showMenu}>
             {children}
             <Footer
