@@ -1,6 +1,6 @@
 {
   "name": "vorpaltesttoolkit",
-  "version": "0.70.16",
+  "version": "0.70.17",
   "description": "Set of UI components for pickleswap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
