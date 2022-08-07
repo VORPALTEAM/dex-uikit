@@ -13,7 +13,7 @@ export const SubMenuContainer = styled(Flex)`
   min-width: 136px;
   background: ${({ theme }) => theme.colors.input};
   border-radius: ${({ theme }) => theme.radii.default};
-  border: ${({ theme }) => `1px solid ${theme.colors.inputSecondary}`};
+  border: none;
 `;
 
 export const ClickableElementContainer = styled.div`

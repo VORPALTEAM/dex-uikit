@@ -18,21 +18,19 @@ export const scaleVariants = {
 
 export const styleVariants = {
   [variants.PRIMARY]: {
-    backgroundColor: "#000",
-    color: "primary",
+    backgroundColor: "primary",
+    color: "#000",
   },
   [variants.SUBPRIMARY]: {
     backgroundColor: "#352F44",
     color: "#F1F6F9",
   },
   [variants.SECONDARY]: {
-    backgroundColor: "transparent",
-    border: "2px solid",
-    borderColor: "primary",
+    backgroundColor: "primary",
     boxShadow: "none",
-    color: "primary",
+    color: "#000",
     ":disabled": {
-      backgroundColor: "transparent",
+      backgroundColor: "#F1F6F9",
     },
   },
   [variants.FARMSBUTTON]: {

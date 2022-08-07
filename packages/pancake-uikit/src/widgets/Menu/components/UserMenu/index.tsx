@@ -39,15 +39,14 @@ export const LabelText = styled.div`
 `;
 
 const Menu = styled.div<{ isOpen: boolean }>`
-  background-color: ${({ theme }) => theme.colors.tertiary};
-  border: 1px solid ${({ theme }) => theme.colors.cardBorder};
-  border-radius: 16px;
+  background-color: ${({ theme }) => theme.colors.tertiaryAlpha};
+  border-radius: 0 0 16px 16px;
   padding-bottom: 4px;
   padding-top: 4px;
   pointer-events: auto;
-  width: 280px;
+  width: 190px;
   visibility: visible;
-  z-index: 1001;
+  z-index: -5;
 
   ${({ isOpen }) =>
     !isOpen &&
