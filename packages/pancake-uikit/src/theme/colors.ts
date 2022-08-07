@@ -17,6 +17,9 @@ export const additionalColors = {
   gold: "#FFC700",
   silver: "#B2B2B2",
   bronze: "#E7974D",
+  cardOne: "#43D8C9",
+  cardTwo: "#C62A88",
+  cardThree: "#590995"
 };
 
 export const lightColors: Colors = {

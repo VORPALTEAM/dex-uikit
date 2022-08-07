@@ -32,7 +32,9 @@ const style = {
 
 const Heading = styled(Text).attrs({ bold: true })<HeadingProps>`
   font-size: ${({ scale }) => style[scale || scales.MD].fontSize};
-  font-family: ${({ scale }) => (scale === scales.XXXL) ? style[scales.XXXL] : "inherit"};
+  font-family: ${({ scale }) => (scale === scales.XXXL ||
+                                 scale === scales.XXL ||
+                                 scale === scales.XL) ? style[scales.XXXL] : "inherit"};
   font-weight: 500;
   line-height: 1.1;
 
