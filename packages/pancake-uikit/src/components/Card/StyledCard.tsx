@@ -22,7 +22,7 @@ interface StyledCardProps extends CardProps {
 /**
  * Priority: Warning --> Success --> Active
  */
-const getBorderColor = ({ isActive, isSuccess, isWarning, borderBackground, theme }: StyledCardProps) => {
+const getBorderColor = ({ isActive, isSuccess, isWarning, position, borderBackground, theme }: StyledCardProps) => {
   if (borderBackground) {
     return borderBackground;
   }
@@ -41,12 +41,15 @@ const getBorderColor = ({ isActive, isSuccess, isWarning, borderBackground, them
   return theme.colors.cardBorder;
 };
 
+const getPosition = ({ isActive, isSuccess, isWarning, position, borderBackground, theme }: StyledCardProps) => {
+  return position;
+};
+
 export const StyledCard = styled.div<StyledCardProps>`
   background: ${getBorderColor};
   border-radius: ${({ theme }) => theme.radii.subCard};
   color: ${({ theme, isDisabled }) => theme.colors[isDisabled ? "textDisabled" : "text"]};
   overflow: hidden;
-  position: relative;
 
   ${({ isActive }) =>
     isActive &&
@@ -73,4 +76,5 @@ StyledCard.defaultProps = {
   isSuccess: false,
   isWarning: false,
   isDisabled: false,
+  position: 'relative'
 };
