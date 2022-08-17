@@ -60,7 +60,7 @@ const StyledButton = styled.button<BaseButtonProps>`
   display: inline-flex;
   font-family: inherit;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   justify-content: center;
   letter-spacing: 0.03em;
   line-height: 1;
@@ -68,7 +68,7 @@ const StyledButton = styled.button<BaseButtonProps>`
   outline: 0;
   transition: background-color 0.2s, opacity 0.2s;
   text-transform: uppercase;
-  
+
 
   &:hover:not(:disabled):not(.pancake-button--disabled):not(.pancake-button--disabled):not(:active) {
     opacity: 0.65;
