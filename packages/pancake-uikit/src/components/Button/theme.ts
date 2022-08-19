@@ -60,6 +60,11 @@ export const styleVariants = {
     color: "text",
     boxShadow: "none",
   },
+  [variants.CONTRAST]: {
+    backgroundColor: "contrast",
+    color: "tetriary",
+    boxShadow: "none",
+  },
   [variants.LIGHT]: {
     backgroundColor: "input",
     color: "textSubtle",
