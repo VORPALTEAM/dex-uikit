@@ -72,6 +72,7 @@ export { default as LineGraphIcon } from "./Icons/LineGraph";
 export { default as ListViewIcon } from "./Icons/ListView";
 export { default as LoginIcon } from "./Icons/Login";
 export { default as LogoText } from "./Icons/LogoText";
+export { default as LogoTextMobile } from "./Icons/LogoTextMobile";
 export { default as LogoIcon } from "./Icons/Logo";
 export { default as LogoRoundIcon } from "./Icons/LogoRound";
 export { default as LogoutIcon } from "./Icons/Logout";

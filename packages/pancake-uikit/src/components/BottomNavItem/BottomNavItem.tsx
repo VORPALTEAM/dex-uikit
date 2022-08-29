@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MenuContext } from "../../widgets/Menu/context";
 import { Flex } from "../Box";
 import AnimatedIconComponent from "../Svg/AnimatedIconComponent";
-import { StyledBottomNavItem, StyledBottomNavText } from "./styles";
+import { StyledBottomNavItem, StyledBottomNavText, PrimaryBottomNavText } from "./styles";
 import { BottomNavItemProps } from "./types";
 
 const BottomNavItem: React.FC<BottomNavItemProps> = ({
@@ -16,7 +16,7 @@ const BottomNavItem: React.FC<BottomNavItemProps> = ({
   const { linkComponent } = useContext(MenuContext);
   const bottomNavItemContent = (
     <Flex flexDirection="column" justifyContent="center" alignItems="center" height="100%">
-      {iconName && (
+      {/* iconName && (
         <AnimatedIconComponent
           iconName={iconName}
           height="22px"
@@ -25,14 +25,22 @@ const BottomNavItem: React.FC<BottomNavItemProps> = ({
           isActive={isActive}
           activeBackgroundColor="backgroundAlt"
         />
-      )}
-      <StyledBottomNavText
-        color={isActive ? "text" : "textSubtle"}
-        fontWeight={isActive ? "600" : "400"}
-        fontSize="10px"
+      ) */}
+      {(label !== "Sale") ? <StyledBottomNavText
+        color="textSubtle"
+        fontWeight={label === "..." ? "700" : "400"}
+        fontSize={label === "..." ? "22px" : "12px"}
       >
         {label}
-      </StyledBottomNavText>
+      </StyledBottomNavText> :
+      <PrimaryBottomNavText
+        color="primary"
+        fontWeight="500"
+        fontSize="12px"
+        textTransform="uppercase"
+      >
+        {label}
+      </PrimaryBottomNavText>}
     </Flex>
   );
 

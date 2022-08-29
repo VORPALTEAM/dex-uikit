@@ -8,13 +8,8 @@ export const StyledBottomNavItem = styled.button`
   cursor: pointer;
   height: 44px;
   padding: 4px 12px;
-  &:hover {
-    border-radius: 16px;
-  }
-  &:hover,
-  &:hover div {
-    background: ${({ theme }) => theme.colors.tertiary};
-  }
+  border-left: 1px solid #F1F6F9;
+  border-right: 1px solid #F1F6F9;
 `;
 
 export const StyledBottomNavText = styled(Text)`
@@ -26,3 +21,9 @@ export const StyledBottomNavText = styled(Text)`
   -webkit-user-select: none;
   -webkit-touch-callout: none;
 `;
+
+export const PrimaryBottomNavText = styled(StyledBottomNavText)`
+    border 1px solid ${({ theme }) => theme.colors.primary};
+    border-radius: 4px;
+    padding: 4px 16px;
+  `

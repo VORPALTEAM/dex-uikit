@@ -62,6 +62,14 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   max-width: 100%;
 `;
 
+const GapFlex = styled(Flex)`
+  gap: 180px;
+
+  ${({ theme }) => theme.mediaQueries.mobile} {
+    gap: 0px;
+  }
+`
+
 const Menu: React.FC<NavProps> = ({
   linkComponent = "a",
   userMenu,
@@ -130,7 +138,7 @@ const Menu: React.FC<NavProps> = ({
         <FixedContainer showMenu={showMenu} height={totalTopMenuHeight}>
           {banner && <TopBannerContainer height={topBannerHeight}>{banner}</TopBannerContainer>}
           <StyledNav>
-            <Flex style={{ gap: "180px" }}>
+            <GapFlex>
               <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
               {!isMobile && (
                 <MenuItems
@@ -141,7 +149,7 @@ const Menu: React.FC<NavProps> = ({
                   ml="24px"
                 />
               )}
-            </Flex>
+            </GapFlex>
             <Flex style={{ gap: "30px" }} alignItems="center" height="100%">
               {/* {!isMobile && (
                 <Box mr="12px">

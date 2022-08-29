@@ -24,6 +24,8 @@ export const StyledUserMenu = styled(Flex)`
   &:hover {
     opacity: 0.65;
   }
+
+
 `;
 
 export const LabelText = styled.div`

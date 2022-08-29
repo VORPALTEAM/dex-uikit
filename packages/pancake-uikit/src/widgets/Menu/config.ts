@@ -100,7 +100,7 @@ export const links: MenuItemsType[] = [
     ],
   },
   {
-    label: "",
+    label: "...",
     href: "/",
     icon: "More",
     items: [

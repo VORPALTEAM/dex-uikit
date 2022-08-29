@@ -117,6 +117,10 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
 
   &:hover {
   }
+
+  ${({ theme }) => theme.mediaQueries.mobile} {
+    display: none;
+  }
 `;
 
 export default StyledMenuItem;
