@@ -5,6 +5,15 @@ import DropdownMenu from "../DropdownMenu/DropdownMenu";
 import MenuItem from "../MenuItem/MenuItem";
 import IconComponent from "../Svg/IconComponent";
 import { MenuItemsProps } from "./types";
+import styled from "styled-components";
+
+const SettingsPc = styled.div`
+  margin-left: 30px;
+
+  ${({ theme }) => theme.mediaQueries.mobile} {
+    display: none;
+  }
+`;
 
 const MenuItems: React.FC<MenuItemsProps> = ({ items = [], activeItem, activeSubItem, globalMenu, ...props }) => {
   return (
@@ -22,7 +31,7 @@ const MenuItems: React.FC<MenuItemsProps> = ({ items = [], activeItem, activeSub
           </DropdownMenu>
         );
       })}
-      <div style={{ marginLeft: "30px" }}>{globalMenu}</div>
+      <SettingsPc>{globalMenu}</SettingsPc>
     </Flex>
   );
 };

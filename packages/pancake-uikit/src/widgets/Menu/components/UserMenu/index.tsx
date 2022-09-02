@@ -30,13 +30,15 @@ export const StyledUserMenu = styled(Flex)`
 
 export const LabelText = styled.div`
   color: ${({ theme }) => theme.colors.contrast};
-  display: none;
   font-weight: 500;
+  margin-left: 10px;
+  font-size: 10px;
 
   ${({ theme }) => theme.mediaQueries.sm} {
     display: block;
     margin-left: 33px;
     margin-right: 4px;
+    font-size: 18px;
   }
 `;
 
@@ -115,8 +117,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
       >
         {/* <MenuIcon avatarSrc={avatarSrc} variant={variant} /> */}
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
-        <ChevronUpIcon style={{ transform: "rotate(180deg)" }} color="contrast" width="13px" />
       </StyledUserMenu>
+      <ChevronUpIcon style={{ transform: "rotate(180deg)" }} color="contrast" width="13px" />
       <Menu style={styles.popper} ref={setTooltipRef} {...attributes.popper} isOpen={isOpen}>
         <Box onClick={() => setIsOpen(false)}>{children}</Box>
       </Menu>

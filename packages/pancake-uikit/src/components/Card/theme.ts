@@ -3,7 +3,7 @@ import { shadows } from "../../theme/base";
 import { CardTheme } from "./types";
 
 export const light: CardTheme = {
-  background: lightColors.backgroundAlt1,
+  background: lightColors.invertedContrast,
   boxShadow: shadows.level1,
   boxShadowActive: shadows.active,
   boxShadowSuccess: shadows.success,

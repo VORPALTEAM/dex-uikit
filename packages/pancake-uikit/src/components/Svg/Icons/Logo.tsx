@@ -12,7 +12,7 @@ const Icon: React.FC<SvgProps> = (props) => {
       </g>
       <defs>
        <filter id="filter0_d_1030_2276" x="0" y="0" width="334" height="334" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset/>
         <feGaussianBlur stdDeviation="43.5"/>

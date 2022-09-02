@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import styled, { keyframes } from "styled-components";
 import Flex from "../../../components/Box/Flex";
-import { LogoIcon, LogoWithTextIcon, LogoText } from "../../../components/Svg";
+import { LogoIcon, LogoWithTextIcon, LogoText, LogoTextMobile } from "../../../components/Svg";
 import { MenuContext } from "../context";
 
 interface Props {
@@ -45,7 +45,31 @@ const StyledLink = styled("a")`
       animation-iteration-count: 1;
     }
   }
+
+  ${({ theme }) => theme.mediaQueries.mobile} {
+    margin-left: 0px;
+  }
 `;
+
+const StyledLinkMobile = styled(StyledLink)`
+
+  ${({ theme }) => theme.mediaQueries.pc} {
+    display: none;
+  }
+`
+
+const LogoPC = styled(LogoText)`
+  ${({ theme }) => theme.mediaQueries.mobile} {
+    display: none;
+  }
+`
+
+const LogoMobile = styled(LogoTextMobile)`
+
+  ${({ theme }) => theme.mediaQueries.pc} {
+    display: none;
+  }
+`
 
 const Logo: React.FC<Props> = ({ isDark, href }) => {
   const { linkComponent } = useContext(MenuContext);
@@ -54,20 +78,34 @@ const Logo: React.FC<Props> = ({ isDark, href }) => {
     <>
       {/* <LogoIcon className="mobile-icon" /> */}
       {/* <LogoWithTextIcon className="desktop-icon" isDark={isDark} /> */}
-      <LogoText className="desktop-icon-text" isDark={isDark} />
+      <LogoPC className="desktop-icon-text" isDark={isDark} />
+    </>
+  );
+  const innerLogoMobile = (
+    <>
+      <LogoMobile className="mobile-icon" isDark={isDark} />
     </>
   );
 
   return (
     <Flex>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
+        <StyledLink as="a" href={href} aria-label="Vorpal home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink href={href} as={linkComponent} aria-label="Pancake home page">
+        <StyledLink href={href} as={linkComponent} aria-label="Vorpal home page">
           {innerLogo}
         </StyledLink>
+      )}
+      {isAbsoluteUrl ? (
+        <StyledLinkMobile as="a" href={href} aria-label="Vorpal home page">
+          {innerLogoMobile}
+        </StyledLinkMobile>
+      ) : (
+        <StyledLinkMobile href={href} as={linkComponent} aria-label="Vorpal home page">
+          {innerLogoMobile}
+        </StyledLinkMobile>
       )}
     </Flex>
   );

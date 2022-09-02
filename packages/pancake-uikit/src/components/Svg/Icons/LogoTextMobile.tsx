@@ -6,79 +6,53 @@ interface LogoProps extends SvgProps {
   isDark: boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
+const LogoMobile: React.FC<LogoProps> = ({ isDark, ...props }) => {
   return (
-    <Svg width="133" height="24" viewBox="0 0 133 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path
-        d="m25.152 6.31-9.39 20.59-9.39-20.59a.45.45 0 0 0-.42-.31H.532a.47.47 0 0 0-.47.7l12.32 27a.46.46 0 0 0 .42.28h5.85a.47.47 0 0 0 .42-.28l12.31-27a.46.46 0 0 0-.38-.7h-5.42a.46.46 0 0 0-.43.31Z"
-        fill="url(#a)"
-      />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="m156.192 33.31 12.31-27a.472.472 0 0 1 .4-.27h5.84a.46.46 0 0 1 .43.27l12.31 27a.459.459 0 0 1-.42.66h-5.37a.471.471 0 0 1-.43-.28l-3.39-7.43a.459.459 0 0 0-.42-.27h-11.16a.461.461 0 0 0-.42.27l-3.39 7.43a.469.469 0 0 1-.42.28h-5.44a.469.469 0 0 1-.43-.66ZM171.432 14l-2.42 5.31.05.03a.458.458 0 0 0 .37.63h4.84a.47.47 0 0 0 .43-.66l-2.43-5.31a.46.46 0 0 0-.84 0Z"
-        fill="url(#b)"
-      />
-      <path d="M200.613 27.52V6.04h-6.45v27.93h26.86v-6.45h-20.41Z" fill="url(#c)" />
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M124.532 6h21.701a9.763 9.763 0 0 1 9.78 9.81v.9c0 5.39-4.37 9.76-9.76 9.76h-15.721v7c0 .26-.21.47-.47.47h-5.53a.47.47 0 0 1-.47-.47v-27c0-.26.211-.47.47-.47Zm24.049 13.017a3.316 3.316 0 0 0 .961-2.357v-.82a3.32 3.32 0 0 0-3.309-3.31h-15.251a.47.47 0 0 0-.47.47v6.54a.47.47 0 0 0 .47.46h15.251a3.32 3.32 0 0 0 2.348-.983Z"
-        fill="url(#d)"
-      />
-      <path
-        d="M107.963 26.45h-.85l9.41 6.67a.471.471 0 0 1-.27.85h-8.65a.438.438 0 0 1-.27-.09l-10.27-7.29a.47.47 0 0 1-.19-.38v-5.74a.46.46 0 0 1 .46-.47h10.63a3.31 3.31 0 0 0 3.31-3.31v-.9a3.31 3.31 0 0 0-3.31-3.31h-15.72v21a.47.47 0 0 1-.46.47h-5.52a.46.46 0 0 1-.46-.47V6.5a.46.46 0 0 1 .46-.5h21.7c5.39 0 9.76 4.37 9.76 9.76v.9a9.763 9.763 0 0 1-9.76 9.79Z"
-        fill="url(#e)"
-      />
-      <circle cx="57.042" cy="20" r="20" fill="url(#f)" />
-      <path
-        d="M59.163 20a74.242 74.242 0 0 1-2.1 17.45A74.241 74.241 0 0 1 54.923 20a74.24 74.24 0 0 1 2.14-17.45 74.24 74.24 0 0 1 2.1 17.45Z"
-        fill="#000"
-      />
-      <circle cx="60.002" cy="13.42" r="2.92" fill="#fff" />
-      <defs>
-        <linearGradient id="a" x1="38.144" y1="28.763" x2="39.538" y2="-12.699" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#AF15FF" />
-          <stop offset="1" stopColor="#3D217F" />
-        </linearGradient>
-        <linearGradient id="b" x1="195.09" y1="35.394" x2="196.485" y2="-6.079" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#AF15FF" />
-          <stop offset="1" stopColor="#3D217F" />
-        </linearGradient>
-        <linearGradient id="c" x1="226.848" y1="37.01" x2="228.74" y2="-4.444" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#AF15FF" />
-          <stop offset="1" stopColor="#3D217F" />
-        </linearGradient>
-        <linearGradient id="d" x1="162.822" y1="33.995" x2="164.161" y2="-7.468" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#AF15FF" />
-          <stop offset="1" stopColor="#3D217F" />
-        </linearGradient>
-        <linearGradient id="e" x1="124.571" y1="32.391" x2="125.923" y2="-9.082" gradientUnits="userSpaceOnUse">
-          <stop stopColor="#AF15FF" />
-          <stop offset="1" stopColor="#3D217F" />
-        </linearGradient>
-        <radialGradient
-          id="f"
-          cx="0"
-          cy="0"
-          r="1"
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(56.263 -5.18) scale(41.41)"
-        >
-          <stop offset=".23" stopColor="#FFF883" />
-          <stop offset=".31" stopColor="#FCF882" />
-          <stop offset=".38" stopColor="#F2F87E" />
-          <stop offset=".45" stopColor="#E1F778" />
-          <stop offset=".5" stopColor="#C9F770" />
-          <stop offset=".56" stopColor="#AAF765" />
-          <stop offset=".62" stopColor="#84F658" />
-          <stop offset=".67" stopColor="#57F548" />
-          <stop offset=".72" stopColor="#25F436" />
-          <stop offset=".74" stopColor="#14F430" />
+    <Svg width="133" height="24" viewBox="0 0 133 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.0915 3.78617L9.45749 16.1402L3.8235 3.78617C3.78771 3.6768 3.68655 3.60213 3.5715 3.60017H0.319495C0.213055 3.58589 0.107743 3.63331 0.0478779 3.72247C-0.0119873 3.81163 -0.0160128 3.92705 0.0374953 4.02017L7.42949 20.2202C7.47252 20.3214 7.57153 20.3874 7.68149 20.3882H11.1915C11.301 20.3859 11.3992 20.3203 11.4435 20.2202L18.8295 4.02017C18.8809 3.93611 18.8837 3.831 18.8367 3.74439C18.7896 3.65778 18.7 3.60281 18.6015 3.60017H15.3495C15.2328 3.6014 15.1295 3.67587 15.0915 3.78617Z" fill="url(#paint0_linear_902_35471_2)"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M93.7155 19.9861L101.101 3.7861C101.146 3.69202 101.238 3.62977 101.341 3.6241H104.845C104.956 3.62145 105.058 3.68523 105.103 3.7861L112.489 19.9861C112.531 20.0722 112.525 20.1737 112.474 20.2543C112.422 20.335 112.333 20.3833 112.237 20.3821H109.015C108.904 20.3821 108.803 20.3162 108.757 20.2141L106.723 15.7561C106.679 15.6572 106.58 15.5938 106.471 15.5941H99.7755C99.6669 15.5938 99.5683 15.6572 99.5235 15.7561L97.4895 20.2141C97.4452 20.3143 97.347 20.3798 97.2375 20.3821H93.9735C93.8781 20.3821 93.7892 20.3339 93.7371 20.254C93.6851 20.1741 93.6769 20.0733 93.7155 19.9861ZM102.859 8.39995L101.407 11.586L101.437 11.604C101.405 11.6835 101.411 11.7737 101.455 11.8478C101.498 11.9219 101.574 11.9715 101.659 11.982H104.563C104.658 11.982 104.747 11.9338 104.799 11.8539C104.851 11.774 104.86 11.6732 104.821 11.586L103.363 8.39995C103.319 8.30054 103.22 8.23652 103.111 8.23652C103.002 8.23652 102.903 8.30054 102.859 8.39995Z" fill="url(#paint1_linear_902_35471_2)"/>
+          <path d="M120.37 16.511V3.62305H116.5V16.511V20.381H120.37H132.616V16.511H120.37Z" fill="url(#paint2_linear_902_35471_2)"/>
+          <path fillRule="evenodd" clipRule="evenodd" d="M74.7195 3.6006H87.7395C89.2999 3.59738 90.7971 4.21706 91.8987 5.32211C93.0004 6.42717 93.6155 7.92622 93.6075 9.4866V10.0266C93.6075 13.2608 90.9857 15.8826 87.7515 15.8826H78.3195V20.0826C78.3195 20.2383 78.1932 20.3646 78.0375 20.3646H74.7195C74.5638 20.3646 74.4375 20.2383 74.4375 20.0826V3.8826C74.4375 3.72685 74.5638 3.6006 74.7195 3.6006ZM89.148 11.4104C89.5206 11.0344 89.7282 10.5255 89.725 9.99616V9.50416C89.7217 8.40869 88.8345 7.52146 87.739 7.51816H78.589C78.4333 7.51816 78.307 7.64442 78.307 7.80016V11.7242C78.3103 11.8776 78.4356 12.0002 78.589 12.0002H87.739C88.2684 11.9986 88.7753 11.7864 89.148 11.4104Z" fill="url(#paint3_linear_902_35471_2)"/>
+          <path d="M64.7775 15.8696H64.2675L69.9135 19.8716C70.0117 19.943 70.0531 20.0693 70.0164 20.185C69.9796 20.3007 69.8729 20.3799 69.7515 20.3816H64.5615C64.503 20.3821 64.446 20.3631 64.3995 20.3276L58.2375 15.9536C58.1654 15.9001 58.123 15.8154 58.1235 15.7256V12.2816C58.1219 12.2074 58.1503 12.1356 58.2022 12.0826C58.2541 12.0295 58.3253 11.9996 58.3995 11.9996H64.7775C65.8744 11.9996 66.7635 11.1104 66.7635 10.0136V9.47361C66.7635 8.37677 65.8744 7.48761 64.7775 7.48761H55.3455V20.0876C55.3455 20.241 55.2229 20.3663 55.0695 20.3696H51.7575C51.6833 20.3696 51.6121 20.3397 51.5602 20.2867C51.5083 20.2336 51.4799 20.1618 51.4815 20.0876V3.89961C51.4748 3.82235 51.5008 3.74582 51.5534 3.68874C51.6059 3.63167 51.68 3.59932 51.7575 3.59961H64.7775C68.0117 3.59961 70.6335 6.22143 70.6335 9.45561V9.99561C70.6383 11.5518 70.0234 13.046 68.9247 14.1481C67.826 15.2502 66.3337 15.8696 64.7775 15.8696Z" fill="url(#paint4_linear_902_35471_2)"/>
+          <circle cx="34.2266" cy="12" r="12" fill="url(#paint5_radial_902_35471_2)"/>
+          <path d="M35.4971 12.0003C35.4932 15.5279 35.0702 19.0425 34.2371 22.4703C33.3959 19.0434 32.9649 15.5288 32.9531 12.0003C32.9649 8.47174 33.3959 4.9571 34.2371 1.53027C35.0702 4.95807 35.4932 8.47269 35.4971 12.0003Z" fill="black"/>
+          <circle cx="36.002" cy="8.0518" r="1.752" fill="white"/>
+       <defs>
+         <linearGradient id="paint0_linear_902_35471_2" x1="22.8866" y1="17.258" x2="23.723" y2="-7.61941" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#AF15FF"/>
+           <stop offset="1" stopColor="#3D217F"/>
+         </linearGradient>
+         <linearGradient id="paint1_linear_902_35471_2" x1="117.054" y1="21.2362" x2="117.891" y2="-3.64729" gradientUnits="userSpaceOnUse">
+             <stop stopColor="#AF15FF"/>
+             <stop offset="1" stopColor="#3D217F"/>
+         </linearGradient>
+         <linearGradient id="paint2_linear_902_35471_2" x1="136.112" y1="22.205" x2="137.247" y2="-2.66715" gradientUnits="userSpaceOnUse">
+             <stop stopColor="#AF15FF"/>
+             <stop offset="1" stopColor="#3D217F"/>
+         </linearGradient>
+         <linearGradient id="paint3_linear_902_35471_2" x1="97.6933" y1="20.3977" x2="98.4966" y2="-4.48027" gradientUnits="userSpaceOnUse">
+             <stop stopColor="#AF15FF"/>
+            <stop offset="1" stopColor="#3D217F"/>
+         </linearGradient>
+         <linearGradient id="paint4_linear_902_35471_2" x1="74.7428" y1="19.4342" x2="75.5538" y2="-5.44974" gradientUnits="userSpaceOnUse">
+             <stop stopColor="#AF15FF"/>
+             <stop offset="1" stopColor="#3D217F"/>
+         </linearGradient>
+         <radialGradient id="paint5_radial_902_35471_2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(33.7586 -3.108) scale(24.846)">
+             <stop offset="0.23" stopColor="#FFF883"/>
+             <stop offset="0.31" stopColor="#FCF882"/>
+             <stop offset="0.38" stopColor="#F2F87E"/>
+             <stop offset="0.45" stopColor="#E1F778"/>
+             <stop offset="0.5" stopColor="#C9F770"/>
+             <stop offset="0.56" stopColor="#AAF765"/>
+             <stop offset="0.62" stopColor="#84F658"/>
+             <stop offset="0.67" stopColor="#57F548"/>
+             <stop offset="0.72" stopColor="#25F436"/>
+             <stop offset="0.74" stopColor="#14F430"/>
         </radialGradient>
       </defs>
     </Svg>
   );
 };
 
-export default React.memo(Logo, (prev, next) => prev.isDark === next.isDark);
+export default React.memo(LogoMobile, (prev, next) => prev.isDark === next.isDark);

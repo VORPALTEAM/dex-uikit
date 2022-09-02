@@ -70,6 +70,14 @@ const GapFlex = styled(Flex)`
   }
 `
 
+const MobileFlex = styled(Flex)`
+  display: none;
+
+  ${({ theme }) => theme.mediaQueries.mobile} {
+    display: block;
+  }
+`
+
 const Menu: React.FC<NavProps> = ({
   linkComponent = "a",
   userMenu,
@@ -150,6 +158,7 @@ const Menu: React.FC<NavProps> = ({
                 />
               )}
             </GapFlex>
+            <MobileFlex>{globalMenu}</MobileFlex>
             <Flex style={{ gap: "30px" }} alignItems="center" height="100%">
               {/* {!isMobile && (
                 <Box mr="12px">
