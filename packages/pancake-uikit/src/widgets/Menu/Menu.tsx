@@ -63,11 +63,33 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 `;
 
 const GapFlex = styled(Flex)`
-  gap: 180px;
+  /* gap: 180px; */
 
   ${({ theme }) => theme.mediaQueries.mobile} {
     gap: 0px;
   }
+`
+
+const GapMenu = styled(MenuItems)`
+  position: absolute;
+  z-index: -1;
+
+  ${({ theme }) => theme.mediaQueries.mobile} {
+    left: 15%;
+  }
+
+  ${({ theme }) => theme.mediaQueries.md} {
+    left: 30%;
+  }
+
+    ${({ theme }) => theme.mediaQueries.xl} {
+      left: 35%;
+    }
+
+    ${({ theme }) => theme.mediaQueries.xl} {
+      left: 40%;
+    }
+
 `
 
 const MobileFlex = styled(Flex)`
@@ -149,7 +171,7 @@ const Menu: React.FC<NavProps> = ({
             <GapFlex>
               <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
               {!isMobile && (
-                <MenuItems
+                <GapMenu
                   globalMenu={globalMenu}
                   items={links}
                   activeItem={activeItem}
