@@ -4,7 +4,7 @@ import { Box, Flex } from "../Box";
 import SocialLinks from "./Components/SocialLinks";
 
 export const StyledFooter = styled(Flex)`
-  background: ${darkColors.dark};
+  background: #000117;
 `;
 
 export const StyledList = styled.ul`
@@ -17,13 +17,17 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledListItem = styled.li`
-  font-size: 22px;
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
   margin-bottom: 8px;
   text-transform: capitalize;
 
   &:first-child {
     color: ${darkColors.contrast};
-    font-weight: 700;
+    font-family: RoundsBlack;
+    font-size: 18px;
+    font-weight: 400;
     text-transform: uppercase;
   }
 `;
