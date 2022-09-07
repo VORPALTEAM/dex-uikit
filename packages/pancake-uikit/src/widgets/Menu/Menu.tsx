@@ -181,7 +181,7 @@ const Menu: React.FC<NavProps> = ({
               )}
             </GapFlex>
             <MobileFlex>{globalMenu}</MobileFlex>
-            <Flex style={{ gap: "30px" }} alignItems="center" height="100%">
+            <Flex style={{ gap: "30px" }} alignItems="center" height="100%" background="#000">
               {/* {!isMobile && (
                 <Box mr="12px">
                   <CakePrice cakePriceUsd={cakePriceUsd} />
