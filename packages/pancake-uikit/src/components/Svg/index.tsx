@@ -5,6 +5,7 @@ export { default as AskIcon } from "./Icons/Ask";
 export { default as ArrowBackIcon } from "./Icons/ArrowBack";
 export { default as ArrowBackBlackIcon } from "./Icons/ArrowBackBlack";
 export { default as ArrowDownIcon } from "./Icons/ArrowDown";
+export { default as SubtractIcon } from "./Icons/Subtract";
 export { default as CustomArrowDown } from "./Icons/CustomArrowDown";
 export { default as ArrowDropDownIcon } from "./Icons/ArrowDropDown";
 export { default as ArrowDropUpIcon } from "./Icons/ArrowDropUp";
