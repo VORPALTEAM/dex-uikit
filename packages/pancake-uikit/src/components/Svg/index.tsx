@@ -29,6 +29,7 @@ export { default as CameraIcon } from "./Icons/Camera";
 export { default as Cards } from "./Icons/Cards";
 export { default as CardViewIcon } from "./Icons/CardView";
 export { default as PlusIcon } from "./Icons/PlusIcon";
+export { default as RoundAskIcon } from "./Icons/RoundAskIcon";
 export { default as CopyClipboardIcon } from "./Icons/CopyClipboardIcon";
 export { default as ShareReferralIcon } from "./Icons/ShareIcon";
 export { default as PencilReferralIcon } from "./Icons/PencilIcon";
