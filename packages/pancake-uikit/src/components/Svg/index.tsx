@@ -31,6 +31,7 @@ export { default as CardViewIcon } from "./Icons/CardView";
 export { default as PlusIcon } from "./Icons/PlusIcon";
 export { default as RoundAskIcon } from "./Icons/RoundAskIcon";
 export { default as CopyClipboardIcon } from "./Icons/CopyClipboardIcon";
+export { default as CheckInCheckBox } from "./Icons/CheckInCheckBox";
 export { default as ShareReferralIcon } from "./Icons/ShareIcon";
 export { default as PencilReferralIcon } from "./Icons/PencilIcon";
 export { default as ChartDisableIcon } from "./Icons/ChartDisable";
