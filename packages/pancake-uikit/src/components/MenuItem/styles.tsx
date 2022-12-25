@@ -112,7 +112,7 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
     border: 1px solid #ACF800;
     border-radius: 3px;
     text-shadow: 0px 0px 10px #ACF800;
-    cursor: not-allowed;
+    cursor: pointer;
     margin: 0px 29px;
     `;
   }}
