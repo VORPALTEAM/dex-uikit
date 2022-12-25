@@ -12,20 +12,24 @@ export const ModalHeader = styled.div<{ background?: string }>`
   border-bottom: 1px solid ${({ theme }) => theme.colors.text};
   padding: 12px 24px;
   display: flex;
-  flex-direction: column-reverse;
-  width: 90%;
+  flex-direction: row;
+  width: 100%;
   margin: auto;
 `;
 
 export const ModalTitle = styled(Flex)`
   align-items: center;
   flex: 1;
-  width: 100%;
+  width: 94%;
+  min-height: 36px;
+  margin-top: 4px;
+  margin-left: 6%;
   justify-content: center;
 `;
 
 export const StyledIconButton = styled(IconButton)`
-  width: 100%;
+  width: 6%;
+  margin-top: 4px;
   justify-content: flex-end;
   height: 20px;
 `;
