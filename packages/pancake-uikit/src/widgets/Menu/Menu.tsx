@@ -71,7 +71,7 @@ const GapFlex = styled(Flex)`
 `
 
 const GapMenu = styled(MenuItems)`
-  position: absolute;
+  /* position: absolute;
   z-index: -1;
 
   ${({ theme }) => theme.mediaQueries.mobile} {
@@ -88,7 +88,7 @@ const GapMenu = styled(MenuItems)`
 
     ${({ theme }) => theme.mediaQueries.xl} {
       left: 40%;
-    }
+    } */
 
 `
 
@@ -170,7 +170,8 @@ const Menu: React.FC<NavProps> = ({
           <StyledNav>
             <GapFlex>
               <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
-              {!isMobile && (
+            </GapFlex>
+            {!isMobile && (
                 <GapMenu
                   globalMenu={globalMenu}
                   items={links}
@@ -179,7 +180,6 @@ const Menu: React.FC<NavProps> = ({
                   ml="24px"
                 />
               )}
-            </GapFlex>
             <MobileFlex>{globalMenu}</MobileFlex>
             <Flex style={{ gap: "30px" }} alignItems="center" height="100%" background="#000">
               {/* {!isMobile && (

@@ -103,9 +103,11 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
     `;
   }}
 
-  ${({ href }) => {
-    if (href === "/sale")
+  ${({ $variant }) => {
+    if ($variant === "green")
       return `
+    padding: 0 16px;
+    height: 20px;
     color: #ACF800;
     border: 1px solid #ACF800;
     border-radius: 3px;
