@@ -103,7 +103,7 @@ const ConnectModal: React.FC<Props> = ({ login, onDismiss = () => null, displayC
                 <WalletCard walletConfig={wallet} login={login} onDismiss={onDismiss} />
               </Box>
             ))}
-            {!showMore && <MoreWalletCard t={t} onClick={() => setShowMore(true)} />}
+            {/* !showMore && <MoreWalletCard t={t} onClick={() => setShowMore(true)} /> */}
           </Grid>
         </WalletWrapper>
         <StyledBox p="24px">

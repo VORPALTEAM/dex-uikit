@@ -16,7 +16,7 @@ const connectors: Config[] = [
     connectorId: ConnectorNames.Injected,
     priority: 1,
   },
-  {
+  /* {
     title: "WalletConnect",
     icon: WalletConnect,
     connectorId: ConnectorNames.WalletConnect,
@@ -58,7 +58,7 @@ const connectors: Config[] = [
     icon: Coin98,
     connectorId: ConnectorNames.Injected,
     priority: 999,
-  },
+  }, */
 ];
 
 export default connectors;
