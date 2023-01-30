@@ -89,7 +89,7 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
   ${({ $variant }) =>
     $variant === "default"
       ? `
-    padding: 0 16px;
+    padding: 16px 16px 12px;
     height: 20px;
   `
       : `
