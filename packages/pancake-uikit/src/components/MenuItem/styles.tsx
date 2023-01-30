@@ -48,7 +48,7 @@ const StyledMenuItem = styled.a<StyledMenuItemProps>`
   ${({ $variant }) =>
     $variant === "default"
       ? `
-    padding: 0 16px;
+    padding: 16px 16px 12px;
     height: 48px;
   `
       : `
@@ -109,7 +109,7 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
     switch (true) {
       case $variant === "green" : 
       return `
-         padding: 0 16px;
+         padding: 16px 16px 12px;
          height: 20px;
          color: #ACF800;
          border: 1px solid #ACF800;
@@ -126,7 +126,7 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
       `;
       case $variant === "star" : 
       return `
-        padding: 0 16px;
+        padding: 16px 16px 12px;
         height: 20px;
         color: #00F0FF;
         border: 1px solid #00F0FF;
