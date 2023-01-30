@@ -22,11 +22,20 @@ const MenuItems: React.FC<MenuItemsProps> = ({ items = [], activeItem, activeSub
         const statusColor = menuItems?.find((menuItem) => menuItem.status !== undefined)?.status?.color;
         const isActive = activeItem === href;
         const linkProps = isTouchDevice() && menuItems && menuItems.length > 0 ? {} : { href };
-        const variant = icon === "Green" ? "green" : "default"
+        const variant = () => {
+          switch (icon) {
+             case "Green" : 
+             return "green";
+             case "Star" : 
+             return "star";
+             default:
+             return "default"
+          }
+        }
         return (
           <DropdownMenu key={`${label}#${href}#${icon}`} items={menuItems} py={1} activeItem={activeSubItem}>
             <div />
-            <MenuItem {...linkProps} isActive={isActive} variant={variant} statusColor={statusColor}>
+            <MenuItem {...linkProps} isActive={isActive} variant={variant()} statusColor={statusColor}>
               {label || <IconComponent iconName={icon} color={isActive ? "secondary" : "textSubtle"} />}
             </MenuItem>
           </DropdownMenu>

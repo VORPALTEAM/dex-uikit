@@ -1,6 +1,6 @@
 import { Colors } from "../../theme";
 
-export type MenuItemVariant = "default" | "subMenu" | "green";
+export type MenuItemVariant = "default" | "subMenu" | "green" | "star";
 
 export interface MenuItemProps {
   isActive?: boolean;

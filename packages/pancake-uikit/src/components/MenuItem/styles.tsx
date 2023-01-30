@@ -4,6 +4,8 @@ import { StyledMenuItemProps } from "./types";
 
 export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
   position: relative;
+  border-left: 1px solid #F1F6F9;
+  border-right: 1px solid #F1F6F9;
 
   ${({ $isActive, $variant, theme }) =>
     $isActive &&
@@ -64,8 +66,8 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
   position: relative;
   display: flex;
   align-items: center;
-  border-left: 1px solid ${({ theme }) => theme.colors.contrast};
-  border-right: 1px solid ${({ theme }) => theme.colors.contrast};
+  /* border-left: 1px solid ${({ theme }) => theme.colors.contrast};
+  border-right: 1px solid ${({ theme }) => theme.colors.contrast}; */
 
   color: ${({ theme, $isActive }) => ($isActive ? "#ACF800" : theme.colors.contrast)};
   font-size: 16px;
@@ -104,7 +106,45 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
   }}
 
   ${({ $variant }) => {
-    if ($variant === "green")
+    switch (true) {
+      case $variant === "green" : 
+      return `
+         padding: 0 16px;
+         height: 20px;
+         color: #ACF800;
+         border: 1px solid #ACF800;
+         border-radius: 3px;
+         text-shadow: 0px 0px 10px #ACF800;
+         cursor: pointer;
+         margin: 0px 29px;
+         text-transform: uppercase;
+
+         &:hover {
+           color: #000;
+           background: #ACF800;
+         }
+      `;
+      case $variant === "star" : 
+      return `
+        padding: 0 16px;
+        height: 20px;
+        color: #00F0FF;
+        border: 1px solid #00F0FF;
+        border-radius: 3px;
+        text-shadow: 0px 0px 10px #00F0FF;
+        cursor: pointer;
+        margin: 0px 29px;
+        text-transform: uppercase;
+
+        &:hover {
+          color: #000;
+          background: #00F0FF;
+        }
+      `;
+      default:
+      return ``
+    }
+    /* if ($variant === "green")
       return `
     padding: 0 16px;
     height: 20px;
@@ -114,11 +154,8 @@ export const StyledMenuItemWithBorder = styled.a<StyledMenuItemProps>`
     text-shadow: 0px 0px 10px #ACF800;
     cursor: pointer;
     margin: 0px 29px;
-    `;
+    `; */
   }}
-
-  &:hover {
-  }
 
   ${({ theme }) => theme.mediaQueries.mobile} {
     display: none;
