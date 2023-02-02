@@ -21,11 +21,18 @@ export const StyledUserMenu = styled(Flex)`
   padding-right: 8px;
   position: relative;
 
+  ${({ theme }) => theme.mediaQueries.sm} {
+    width: 120px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 120px;
+  }
+
   &:hover {
     opacity: 0.65;
   }
-
-
+ 
 `;
 
 export const LabelText = styled.div`
@@ -38,6 +45,10 @@ export const LabelText = styled.div`
     display: block;
     margin-left: 33px;
     margin-right: 4px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
     font-size: 18px;
   }
 `;
@@ -117,8 +128,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
       >
         {/* <MenuIcon avatarSrc={avatarSrc} variant={variant} /> */}
         <LabelText title={text || account}>{text || accountEllipsis}</LabelText>
+        <ChevronUpIcon style={{ transform: "rotate(180deg)" }} color="contrast" width="13px" />
       </StyledUserMenu>
-      <ChevronUpIcon style={{ transform: "rotate(180deg)" }} color="contrast" width="13px" />
       <Menu style={styles.popper} ref={setTooltipRef} {...attributes.popper} isOpen={isOpen}>
         <Box onClick={() => setIsOpen(false)}>{children}</Box>
       </Menu>
