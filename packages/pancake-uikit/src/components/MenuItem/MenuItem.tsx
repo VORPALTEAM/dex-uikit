@@ -9,6 +9,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
   isActive = false,
   variant = "default",
   statusColor,
+  isFirst = false,
   ...props
 }) => {
   const { linkComponent } = useContext(MenuContext);
@@ -21,7 +22,9 @@ const MenuItem: React.FC<MenuItemProps> = ({
         as: "div",
       };
   return (
-    <StyledMenuItemContainer $isActive={isActive} $variant={variant}>
+    <StyledMenuItemContainer style={{
+      borderLeft: isFirst ? "1px solid #F1F6F9" : "none"
+    }} $isActive={isActive} $variant={variant}>
       <StyledMenuItemWithBorder
         {...itemLinkProps}
         $isActive={isActive}

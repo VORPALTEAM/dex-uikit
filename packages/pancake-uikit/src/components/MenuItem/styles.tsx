@@ -4,7 +4,6 @@ import { StyledMenuItemProps } from "./types";
 
 export const StyledMenuItemContainer = styled.div<StyledMenuItemProps>`
   position: relative;
-  border-left: 1px solid #F1F6F9;
   border-right: 1px solid #F1F6F9;
 
   ${({ $isActive, $variant, theme }) =>

@@ -4,4 +4,5 @@ export interface BottomNavItemProps {
   iconName?: string;
   isActive?: boolean;
   showItemsOnMobile?: boolean;
+  isFirst?: boolean;
 }

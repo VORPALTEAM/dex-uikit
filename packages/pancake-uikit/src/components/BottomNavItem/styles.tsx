@@ -8,7 +8,6 @@ export const StyledBottomNavItem = styled.button`
   cursor: pointer;
   height: 44px;
   padding: 4px 12px;
-  border-left: 1px solid #F1F6F9;
   border-right: 1px solid #F1F6F9;
 `;
 

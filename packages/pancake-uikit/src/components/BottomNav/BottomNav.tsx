@@ -10,12 +10,15 @@ import { Overlay } from "../Overlay";
 const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", activeSubItem = "", ...props }) => {
   const [menuOpenByIndex, setMenuOpenByIndex] = useState({});
   const isBottomMenuOpen = Object.values(menuOpenByIndex).reduce((acc, value) => acc || value, false);
+
+  let ind = 0
   return (
     <>
       {isBottomMenuOpen && <Overlay />}
       <StyledBottomNav justifyContent="space-around" {...props}>
         {items.map(({ label, items: menuItems, href, icon, showOnMobile = true, showItemsOnMobile = true }, index) => {
           const statusColor = menuItems?.find((menuItem) => menuItem.status !== undefined)?.status?.color;
+          ind++
           return (
             showOnMobile && (
               <DropdownMenu
@@ -35,6 +38,7 @@ const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", acti
                       label={label}
                       iconName={icon}
                       showItemsOnMobile={showItemsOnMobile}
+                      isFirst={ind === 1 ? true : false}
                     />
                   </NotificationDot>
                 </Box>

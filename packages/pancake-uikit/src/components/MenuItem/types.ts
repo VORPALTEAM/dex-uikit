@@ -7,6 +7,7 @@ export interface MenuItemProps {
   href?: string;
   variant?: MenuItemVariant;
   statusColor?: keyof Colors;
+  isFirst: boolean;
 }
 
 export type StyledMenuItemProps = {

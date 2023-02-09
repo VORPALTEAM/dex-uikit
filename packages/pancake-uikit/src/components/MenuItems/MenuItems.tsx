@@ -16,9 +16,13 @@ const SettingsPc = styled.div`
 `;
 
 const MenuItems: React.FC<MenuItemsProps> = ({ items = [], activeItem, activeSubItem, globalMenu, ...props }) => {
+  
+  let ind = 0
+
   return (
     <Flex style={{ alignItems: "center" }} {...props}>
-      {items.map(({ label, items: menuItems = [], href, icon = "" }) => {
+      {
+      items.map(({ label, items: menuItems = [], href, icon = "" }) => {
         const statusColor = menuItems?.find((menuItem) => menuItem.status !== undefined)?.status?.color;
         const isActive = activeItem === href;
         const linkProps = isTouchDevice() && menuItems && menuItems.length > 0 ? {} : { href };
@@ -32,10 +36,11 @@ const MenuItems: React.FC<MenuItemsProps> = ({ items = [], activeItem, activeSub
              return "default"
           }
         }
+        ind++
         return (
           <DropdownMenu key={`${label}#${href}#${icon}`} items={menuItems} py={1} activeItem={activeSubItem}>
             <div />
-            <MenuItem {...linkProps} isActive={isActive} variant={variant()} statusColor={statusColor}>
+            <MenuItem {...linkProps} isFirst={ind === 1 ? true : false} isActive={isActive} variant={variant()} statusColor={statusColor}>
               {label || <IconComponent iconName={icon} color={isActive ? "secondary" : "textSubtle"} />}
             </MenuItem>
           </DropdownMenu>
