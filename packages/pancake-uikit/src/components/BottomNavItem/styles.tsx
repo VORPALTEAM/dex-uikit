@@ -26,3 +26,9 @@ export const PrimaryBottomNavText = styled(StyledBottomNavText)`
     border-radius: 4px;
     padding: 4px 16px;
   `
+
+export const StarBottomNavText = styled(StyledBottomNavText)`
+  border 1px solid #00F0FF;
+  border-radius: 4px;
+  padding: 4px 16px;
+`

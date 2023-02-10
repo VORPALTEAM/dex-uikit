@@ -19,6 +19,16 @@ const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", acti
         {items.map(({ label, items: menuItems, href, icon, showOnMobile = true, showItemsOnMobile = true }, index) => {
           const statusColor = menuItems?.find((menuItem) => menuItem.status !== undefined)?.status?.color;
           ind++
+          const theme = () => {
+             switch (icon) {
+              case "Green" :
+                return "green";
+              case "Star" :
+                return "star";
+              default:
+                return 'default';
+             } 
+          }
           return (
             showOnMobile && (
               <DropdownMenu
@@ -37,6 +47,7 @@ const BottomNav: React.FC<BottomNavProps> = ({ items = [], activeItem = "", acti
                       isActive={href === activeItem}
                       label={label}
                       iconName={icon}
+                      theme={theme()}
                       showItemsOnMobile={showItemsOnMobile}
                       isFirst={ind === 1 ? true : false}
                     />

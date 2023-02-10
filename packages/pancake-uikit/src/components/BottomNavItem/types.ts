@@ -5,4 +5,5 @@ export interface BottomNavItemProps {
   isActive?: boolean;
   showItemsOnMobile?: boolean;
   isFirst?: boolean;
+  theme: "default" | "subMenu" | "green" | "star"
 }
